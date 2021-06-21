@@ -125,6 +125,7 @@
   <script src="../assets/demo/demo.js"></script>
   
   <script src="../assets/js/loading.js"></script>
+  <script src="../public/Concurrent.Thread.js"></script>
   <script>
     $(document).ready(function() {
       $().ready(function() {

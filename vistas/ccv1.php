@@ -22,13 +22,13 @@ require 'header.php';
                           <label>INGRESE LAS CC</label>
                           <div class="form-group bmd-form-group">
                             <!-- <label class="bmd-label-floating"> 5180302002577220|10|2022|271</label> -->
-                            <textarea class="form-control" rows="10" placeholder="5180302002577220|10|2022|271"></textarea>
+                            <textarea class="form-control" rows="10" id="tx_ccs" placeholder="5180302002577220|10|2022|271"></textarea>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary pull-right">ENVIAR</button>
-                    <button type="submit" class="btn btn-danger pull-right">CANCELAR</button>
+                    <button type="button" onclick="enviatTest()" class="btn btn-primary pull-right">ENVIAR</button>
+                    <button type="button" onclick="detener()" class="btn btn-danger pull-right">CANCELAR</button>
                     <div class="clearfix"></div>
                   </form>
                 </div>
@@ -44,68 +44,9 @@ require 'header.php';
                 <div class="card-body">
                   <h6 class="card-category">GATES OLYMPUS</h6>
                   <!-- <h4 class="card-title">Alec Thompson</h4> -->
-                  <table class="table">
+                  <table class="table" id="gates">
                         <tbody>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input class="form-check-input" type="checkbox" value="" checked="">
-                                  <span class="form-check-sign">
-                                    <span class="check"></span>
-                                  </span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>ATENEA</td>
-                            <td>AMEX-MC-VISA</td>
-                            
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input class="form-check-input" type="checkbox" value="">
-                                  <span class="form-check-sign">
-                                    <span class="check"></span>
-                                  </span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>DIONISIO</td>
-                            <td>AMEX-MC-VISA</td>
-                            
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input class="form-check-input" type="checkbox" value="">
-                                  <span class="form-check-sign">
-                                    <span class="check"></span>
-                                  </span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>PAN</td>
-                            <td>AMEX-MC-VISA</td>
-                            
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input class="form-check-input" type="checkbox" value="" >
-                                  <span class="form-check-sign">
-                                    <span class="check"></span>
-                                  </span>
-                                </label>
-                              </div>
-                            </td>
-                            <td>ARTEMISA</td>
-                            <td>AMEX-MC-VISA</td>
-                            
-                          </tr>
+                         
                         </tbody>
                       </table>
                   <!-- <a href="#pablo" class="btn btn-primary btn-round">Follow</a> -->

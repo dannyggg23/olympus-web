@@ -1,6 +1,15 @@
 <?php
 
+
+
 require 'header.php';
+
+$usuario=$_SESSION['usuario'];
+$creditos=$_SESSION['creditos'];
+$fecha=$_SESSION['fecha'];
+$lives=$_SESSION['lives'];
+$deads=$_SESSION['deads'];
+
 
 ?>
 
@@ -16,7 +25,7 @@ require 'header.php';
                     <i class="material-icons">account_balance_wallet</i>
                   </div>
                   <p class="card-category">CREDITOS</p>
-                  <h3 class="card-title">250
+                  <h3 class="card-title"><?php echo $creditos; ?>
                     <!-- <small>CREDITOS DEL CHEKER</small> -->
                   </h3>
                 </div>
@@ -35,7 +44,7 @@ require 'header.php';
                     <i class="material-icons">credit_score</i>
                   </div>
                   <p class="card-category">Lives</p>
-                  <h3 class="card-title">150</h3>
+                  <h3 class="card-title"><?php echo $lives; ?></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -51,7 +60,7 @@ require 'header.php';
                     <i class="material-icons">credit_card_off</i>
                   </div>
                   <p class="card-category">Deads</p>
-                  <h3 class="card-title">75</h3>
+                  <h3 class="card-title"><?php echo $deads; ?></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -67,7 +76,7 @@ require 'header.php';
                     <i class="material-icons">grading</i>
                   </div>
                   <p class="card-category">Bins</p>
-                  <h3 class="card-title">35</h3>
+                  <h3 class="card-title">---</h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">

@@ -1,10 +1,21 @@
+
+<?php
+
+session_start();
+
+if(empty($_SESSION['usuario'])){
+  header("Location: login.php");
+}
+
+
+?>
 <!--
 =========================================================
 * Material Dashboard Dark Edition - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-dark
-* Copyright 2019 OLYMPUS CHEKER (http://www.creative-tim.com)
+* Copyright 2019 OLYMPUS CHEKER (#)
 
 * Coded by www.creative-tim.com
 
@@ -42,7 +53,7 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+      <div class="logo"><a href="#" class="simple-text logo-normal">
           OLYMPUS CHEKER
         </a></div>
       <div class="sidebar-wrapper">
@@ -60,21 +71,28 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
+            <a class="nav-link" href="https://0lympus-cheker.com/ccgen/" target="_blank">
               <i class="material-icons">credit_card</i>
               <p>Generador</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
+            <a class="nav-link" href="">
               <i class="material-icons">grading</i>
               <p>Bins</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
+            <a class="nav-link" href="">
               <i class="material-icons">money</i>
               <p>MIS CC</p>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="login.php">
+              <i class="material-icons">end</i>
+              <p>SALIR</p>
             </a>
           </li>
          
@@ -92,7 +110,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:void(0)">OLYMPUS CHEKER</a>
+            <a class="navbar-brand" href="javascript:void(0)">OLYMPUS CHEKER  </a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
             <span class="sr-only">Toggle navigation</span>

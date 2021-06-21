@@ -1,3 +1,16 @@
+<?php
+
+
+
+session_start();
+session_unset();
+
+//destruimos la session
+session_destroy();
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -26,14 +39,14 @@
 <h3 class="mb-4 text-center">------</h3>
 <form action="#" class="signin-form">
 <div class="form-group">
-<input type="text" class="form-control" placeholder="Username" required>
+<input type="text" class="form-control" placeholder="Username" id="usuario" required>
 </div>
 <div class="form-group">
-<input id="password-field" type="password" class="form-control" placeholder="Password" required>
+<input id="password-field" type="password" class="form-control" placeholder="Password"  required>
 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 </div>
 <div class="form-group">
-<button type="submit" class="form-control btn btn-primary submit px-3">INGRESAR</button>
+<button type="button" onclick="login()" class="form-control btn btn-primary submit px-3">INGRESAR</button>
 </div>
 <div class="form-group d-md-flex">
 <div class="w-50">
@@ -65,6 +78,8 @@
 <script>eval(mod_pagespeed_xfgCyuItiV);</script>
 
 <script defer src="../public/static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6609314a4994d50d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.js" integrity="sha512-K3MtzSFJk6kgiFxCXXQKH6BbyBrTkTDf7E6kFh3xBZ2QNMtb6cU/RstENgQkdSLkAZeH/zAtzkxJOTTd8BqpHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="scripts/login.js"></script>
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/bootstrap/login-form-20/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Jun 2021 03:29:20 GMT -->
